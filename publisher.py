@@ -4,7 +4,7 @@ import paho.mqtt.client as mqtt
 
 unacked_publish = set()
 
-mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, "10.0.2.18") #THIS IS AN EXAMPLE AND YOU SHOULD CHANGE THIS IP ADDRESS ACCORDINGLY
+mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 
 mqttc.connect('10.0.2.16') #HERE YOU SHOULD SPECIFY THE BROKER IP
 mqttc.loop_start()
