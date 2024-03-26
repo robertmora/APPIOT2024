@@ -20,8 +20,8 @@ sudo apt update -y && sudo apt install mosquitto
 To get started with these examples, first clone this repository to your local machine. For instance, to clone it to the lab virtual machine, you could use:
 
 ```bash
-cd /home/networkedss/Desktop
-git clone https://github.com/robertmora/APPIOT2024 appiot_lab2
+cd /home/networkedss/Desktop/appiot_lab2
+git clone https://github.com/robertmora/APPIOT2024_Lab2
 ```
 
 Navigate to the cloned directory:
