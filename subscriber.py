@@ -15,12 +15,12 @@ def on_connect(client, userdata, flags, reason_code, properties):
         print("Connected with result code "+str(reason_code))
         client.subscribe("paho/test/topic")
 
-mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2,"10.0.2.16") #THIS IS AN EXAMPLE AND YOU SHOULD CHANGE THIS IP ADDRESS ACCORDINGLY
+mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2,"10.0.2.17") #THIS IS AN EXAMPLE AND YOU SHOULD CHANGE THIS IP ADDRESS ACCORDINGLY
 mqttc.on_connect = on_connect
 mqttc.on_message = on_message
 
 
 mqttc.user_data_set([])
-mqttc.connect('10.0.2.15')
+mqttc.connect('10.0.2.16') #HERE YOU SHOULD SPECIFY THE BROKER IP
 mqttc.loop_forever()
 print(f"Received the following message: {mqttc.user_data_get()}")
