@@ -27,7 +27,7 @@ git clone https://github.com/robertmora/APPIOT2024_Lab2
 Navigate to the cloned directory:
 
 ```bash
-cd appiot_lab2
+cd APPIOT2024_Lab2
 ```
 
 ### Running the Publisher
